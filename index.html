@@ -1,0 +1,99 @@
+<html>
+	<head>
+			<meta charset="utf-8">
+			<title>Jupiter Project</title>
+			<link rel="stylesheet" type="text/css" href="./style.css">
+			<script src="./script.js"></script>
+	</head>
+	<body>
+			<div>
+				<div id="navbar">
+					<div id="nav_contents">
+							<img src="./icon.png"/ >
+							<p>User Name</p>
+					</div>
+				</div>
+				<div id="lower">
+					<div id="left_bar">
+						<div class="button_list">
+							<center><button type="button" id="profile_button" class="left_button main_button">Profile</button></center>
+							<button type="button" id="settings_button" class="left_dropdown left_button profile">Settings</button>
+							<button type="button" id="notifications_button" class="left_dropdown left_button profile">Notifications</button>
+						</div>
+                        <div class="button_list">
+                            <center><button class="left_button main_button" id="my_tasks">My Tasks</button>
+                            </center>
+                            <button class="left_button left_dropdown tasks_button tasks" >Task1</button>
+                            <button class="left_button left_dropdown tasks_button tasks">Task2</button>
+                        </div>
+					</div>
+					<div id="content_bar">
+						<div id="profile_info">
+							<center><span class="headings">Profile Info</span><br><br>
+								<form>
+									<label for="name" class="side_labels">Name</label>
+									<input type="text" id="main_name" class="fields"/><br><br>
+									<label for="dob" class="side_labels">DOB</label>
+									<input type="date" id="dob" class="fields"/><br><br>
+									<label for="profession" class="side_labels">Profession</label>
+									<input type="text" class="fields" id="profession" /><br><br>
+									<label for="designation" class="side_labels">Designation</label>
+									<input type="text" class="fields" id="designation" /><br><br>
+									<input type="submit" name="submit" value="Submit" class="form_button green">
+									<input type="reset" name="cancel" value="Cancel" class="form_button red">
+								</form>
+							</center>
+						</div>
+                        <div id="notifications_div">
+                            <center id="not_disappearing"><span class="headings">Notifications</span></center>
+                            <center>
+                                <form id="notifications_form">
+                                    <label for="alerts" class="non_buttons side_labels">Send all alerts</label>
+                                    <input type="checkbox" id="alerts" /><br><br>
+                                    <label for="alert_success" class="non_buttons side_labels">Alerts only task success</label>
+                                    <input type="checkbox" id="alert_success" /><br><br>
+                                    <label for = "alert_failure" class="non_buttons side_labels">Alert only for failed tasks</label>
+                                    <input type="checkbox" id="alert_failure" /><br><br>
+                                    <label for="no_alerts" class="non_buttons side_labels">I do not want any alerts</label>
+                                    <input type="checkbox" id="no_alerts"/> <br><br>
+                                    <input type="reset" value="Cancel" class="form_button red"/>
+                                    <input  type="submit" value="Submit" class="form_button green" />                    
+                                </form>
+                            </center>
+                        </div>
+                        <div id="tasks_div">
+                            <center><span class="headings" id="task_name">Filler name</span></center>
+                            <center>
+                                <form id="tasks_form">
+                                     
+                                        <label for="drop1" class="side_labels">Source Name</label>
+                                        <select name="DropDown1" id="drop1" class="side_labels right_side_ones">
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                            <option value="4">Option 4</option>
+                                        </select><br><br>
+                                        <label for="enable_log" class="side_labels">Enable logging</label>
+                                        <input type="checkbox" id="enable_log" class="right_side_ones"><br><br>
+                                        <label for="provide_sql" class="side_labels" id="provide_sql_label">Provide SQL</label>
+                                        <textarea rows="6" name="query_sql" id="provide_sql" placeholder="Provide SQL here" class="right_side_ones"></textarea><br><br>
+                                        <label class="side_labels" for="drop2">Target Result</label>
+                                        <select id="drop2" class="side_labels right_side_ones">
+                                            <option value="1">Option 1</option>
+                                            <option value="2">Option 2</option>
+                                            <option value="3">Option 3</option>
+                                            <option value="4">Option 4</option>
+                                        </select><br><br>
+                                        <input type="button" value="Validate" class="form_button blue">                                        
+                                        <input type="submit" value="Submit" class="form_button green">
+                                        <input type="reset" value="Cancel" class="form_button red">
+                                        
+                                    
+                                </form>
+                            </center>
+                        </div><!--End of tasks-->
+					</div>
+				</div>
+			</div>
+	</body>
+</html>

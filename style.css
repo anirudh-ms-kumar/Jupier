@@ -1,0 +1,172 @@
+html, body{
+  margin: 0;
+  padding: 0;
+}
+#navbar{
+  width: 100%;
+  height: 12%;
+  border: 1px solid black;
+}
+#nav_contents{
+  float: right;
+}
+#nav_contents p{
+  font-size: 12px;
+  font-weight: bold;
+  position: relative;
+  right:20%;
+}
+ #nav_contents img{
+  max-width: 55%;
+
+}
+#lower{
+  width: 100%;
+  height: 85%;
+  margin-top: 1%;
+  display: flex;
+  flex-direction: row;
+}
+#left_bar{
+  width: 15%;
+  height: 100%;
+  margin-left: 20px;
+  border: 1px solid purple;
+  border-radius: 10px;
+}
+#content_bar{
+  width:75%;
+  height: 100%;
+  font-family:sans-serif;
+}
+
+/*left_bar*/
+
+#left_bar div center{
+  margin-top: 5%;
+}
+.main_button{
+  width: 70%;    
+}
+.main_button:hover{
+    border-color: orange;
+    background-color: #f7c265;
+}
+.left_button{
+  margin-bottom: 3%;
+    border-radius: 4px;
+}
+.left_button:hover{
+    cursor: pointer;
+}
+.left_dropdown{
+  width: 70%;
+  position: relative;
+  left: 25%;
+}
+.left_dropdown:hover{
+    border-color: aqua;
+    background-color: #c9fff5;
+}
+/*content_bar*/
+
+#profile_info{
+  padding-top: 3%;
+}
+
+
+#profile_info form{
+  width: 40%;
+  height: 60%;
+  display: inline-block;
+  padding: 4% 10px 20px 3%;
+  border: 1px solid red;
+
+}
+#profile_info form input{
+  margin-bottom: 20px;
+}
+.fields{
+  position: relative;
+  right: -5%;
+}
+#profile_info form label{
+  width: 23%;      
+  float: left;
+}
+
+
+
+
+#notifications_div center form{
+    height: 60%;
+    width: 25%;
+    display: inline-block;
+    margin-top: 3%;
+    padding: 3% 5% 3% 5%;
+    border: 1px solid red;
+    text-align: left;
+}
+#notifications_div center form .non_buttons{
+    display: inline-block;
+}
+#notifications_form input{
+    float: right;
+}
+
+
+
+
+
+
+.form_button{
+  font-size: 15px;
+  padding: 7px 18px 7px 18px;
+  color: white;
+  border-radius: 4px;
+  border-color: transparent;
+  margin-right: 5%;
+  float: right;
+}
+.red{
+  background-color: red;
+}
+.green{
+  background-color: green;
+}
+.blue{
+    background-color:aquamarine;
+}
+#notifications_form label{
+    margin-bottom: 4%;
+}
+.headings{
+  font-size: 15px;
+  padding: 7px 10px 7px 10px;
+  background-color: #dcdedc;
+  border-radius: 4px;
+}
+.side_labels{
+    font-size: 14px;
+    background-color: #dcdedc;
+    border-radius: 4px;
+    padding: 7px 10px 7px 10px;
+}
+#tasks_div *{
+    margin-bottom: 5%
+}
+
+#tasks_form{
+   width: 50%;
+    height: 70%;
+    padding: 3% 1% 3% 1%;
+    border: 1px solid red;    
+    text-align: left;
+}
+.right_side_ones{
+    margin-left: 14%
+}
+#tasks_form textarea{
+    color: black;
+    background-color: #d7bfff;
+}
